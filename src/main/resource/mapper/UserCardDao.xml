@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--spring整合时通过dao接口自动映射，因此namespace需要指定位接口得路径，否则找不到该方法-->
+<mapper namespace="com.ssm.dao.UserCardDao">
+
+    <select id="findAll" resultType="com.ssm.domain.UserCard">
+        select * from  usercard;
+    </select>
+</mapper>
